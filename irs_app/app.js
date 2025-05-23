@@ -73,7 +73,7 @@ const startServer = async () => {
     
     // Sync database
     console.log('Syncing database...');
-    await sequelize.sync({ alter: true });
+    await sequelize.sync({ alter: false });
     console.log('Database synced');
 
     // Start server
