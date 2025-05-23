@@ -39,7 +39,7 @@ export const testConnection = async () => {
 
 
 // Sync function to sync models with DB schema
-export const sync = async ({ force = true, alter = true } = {}) => {
+export const sync = async ({ force = false, alter = false } = {}) => {
   try {
     // Import your models here (adjust path)
     await import('../models/user.js');
